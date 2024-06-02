@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="126dp"
+    android:layout_height="176dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_drivers"
+            android:layout_width="126dp"
+            android:layout_height="126dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/alexalbon"
+            android:clipToOutline="true"
+            android:background="@drawable/rounded_corners">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_namadriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alexander Albon"
+            android:textSize="14dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_negaradriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thailand"
+            android:textSize="12dp">
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

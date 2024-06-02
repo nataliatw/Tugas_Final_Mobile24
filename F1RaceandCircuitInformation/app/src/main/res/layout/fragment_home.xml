@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginStart="20dp"
+       android:layout_marginEnd="20dp"
+       android:layout_marginTop="25dp"
+       android:orientation="vertical">
+
+      <androidx.appcompat.widget.SearchView
+          android:id="@+id/searchView"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:layout_marginBottom="5dp"
+          android:layout_marginTop="5dp"
+          app:iconifiedByDefault="true"
+          android:queryBackground="@color/white"
+          android:searchIcon="@drawable/search"
+          android:background="@drawable/search_bg">
+      </androidx.appcompat.widget.SearchView>
+
+      <TextView
+          android:id="@+id/tv_driver"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Our Drivers"
+          android:textStyle="bold"
+          android:textSize="24sp"
+          android:textColor="@color/black">
+      </TextView>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/rv_drivers"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+          tools:itemCount="21"
+          tools:listitem="@layout/card_drivers"
+          android:orientation="horizontal">
+      </androidx.recyclerview.widget.RecyclerView>
+
+      <LinearLayout
+          android:id="@+id/layout1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:background="@drawable/card_bg"
+          android:layout_margin="10dp"
+          android:padding="10dp">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share Your Precious Moment with Us"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/white">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow Our Instagram and Tag Us"
+                android:textSize="12sp"
+                android:textColor="@color/white">
+            </TextView>
+         </LinearLayout>
+
+         <ImageView
+             android:id="@+id/iv_ig"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:src="@drawable/arrow_right"
+             android:layout_gravity="center"
+             android:layout_marginStart="15dp">
+         </ImageView>
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/layout2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:background="@drawable/card_bg"
+          android:layout_margin="10dp"
+          android:padding="10dp">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Your Favorite Race Ticket Now"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/white">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visit Our Ticketing Website"
+                android:textSize="12sp"
+                android:textColor="@color/white">
+            </TextView>
+         </LinearLayout>
+
+         <ImageView
+             android:id="@+id/iv_tickets"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:src="@drawable/arrow_right"
+             android:layout_gravity="center"
+             android:layout_marginStart="26dp">
+         </ImageView>
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/tv_race"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="2024 Race Schedule"
+          android:textStyle="bold"
+          android:textSize="24sp"
+          android:textColor="@color/black">
+      </TextView>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/rv_races"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+          app:spanCount="2"
+          tools:itemCount="24"
+          tools:listitem="@layout/card_race">
+      </androidx.recyclerview.widget.RecyclerView>
+
+      <ProgressBar
+          android:id="@+id/progressbar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="gone">
+      </ProgressBar>
+   </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.RaceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/blackish"
+            android:elevation="4dp"
+            app:title="Race Schedule"
+            app:titleTextColor="@color/white"
+            app:titleMarginStart="133dp">
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/iv_circuit"
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:src="@drawable/bahrain"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="10dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvtrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Time"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Race"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_racedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02 Maret"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="15dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_racetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15.00"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="15dp">
+                </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qualifying"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_quadate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01 Maret"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_quatime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16.00"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp">
+                </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Practice 3"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_prac3date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01 Maret"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_prac3time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.30"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Practice 2"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_prac2date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="29 Februari"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_prac2time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15.00"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Practice 1"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_prac1date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="29 Februari"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_prac1time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11.30"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp">
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvcircuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Circuit Information"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_circuitrace"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:src="@drawable/bahraincircuit"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            android:background="@drawable/rounded_corners"
+            android:layout_margin="10dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_namecircuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahrain International Circuit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_locationcircuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sakhir,Bahrain"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/layout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Information About The Race"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/white">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_raceinfo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="center"
+                android:layout_marginStart="90dp">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Information About The Circuit"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/white">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_circuitinfo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="center"
+                android:layout_marginStart="90dp">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover More About F1 with F1 TV"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/white">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_f1tv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="center"
+                android:layout_marginStart="90dp">
+            </ImageView>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone">
+        </ProgressBar>
+
+    </LinearLayout>
+</ScrollView>
